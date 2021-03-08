@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.mobile-header{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 5% 10%;
+    padding: 1rem 4rem;
+    border-bottom: 1px solid gray;
+}
+
+.insta-logo{
+    font-family: 'Lobster Two', cursive;
+    margin: 0px;
+    padding-left: 2rem;
+    font-weight: lighter;
+}
+
+.search{
+    margin-top: 0.5rem;
+    padding: 0.25rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.icons{
+    display: flex;
+    align-self: center;
+}
+
+.icon{
+    height: 25px;
+    width: auto;
+    padding: 0rem 1rem;
+}
