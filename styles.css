@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300;400;500&display=swap');
 
+:root {
+    --blue: rgb(0, 122, 255);
+    --green: rgb(52, 199, 89);
+    --indigo: rgb(88, 86, 214);
+    --orange: rgb(255, 149, 0);
+    --pink: rgb(255, 45, 85);
+    --red: rgb(255, 59, 48);
+    --teal: rgb(90, 200, 250);
+    --yellow: rgb(255, 204, 0);
+    --gray: rgb(174, 174, 178);
+    --white: rgb(242, 242, 247);
+    --black: rgb(28, 28, 30);
+    --silver: rgb(229, 229, 234);
+		--dark-gray: rgb(44, 44, 46);
+
+		--dm-blue: rgb(10, 132, 255);
+		--dm-green: rgb(48, 209, 88);
+    --dm-indigo: rgb(94, 92, 230);
+    --dm-orange: rgb(255, 159, 10);
+    --dm-pink: rgb(255, 55, 95);
+    --dm-red: rgb(255, 69, 58);
+    --dm-teal: rgb(100, 210, 255);
+    --dm-yellow: rgb(255, 214, 10);
+    --dm-gray: rgb(99, 99, 102);    
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -9,34 +35,49 @@ input::placeholder {
     text-align: center;
 }
 
-.mobile-header{
-    display: grid;
-    grid-template-columns: 10% 30% 20% 5% 10%;
-    padding: 1rem 4rem;
-    border-bottom: 1px solid gray;
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    border-bottom: 1px solid var(--gray);
+    align-items: center;
+    justify-content: space-around;
 }
 
 .insta-logo{
-    font-family: 'Lobster Two', cursive;
-    margin: 0px;
-    padding-left: 2rem;
-    font-weight: lighter;
+    font-family: "Lobster Two",sans-serif;
 }
 
-.search{
-    margin-top: 0.5rem;
-    padding: 0.25rem 1.5rem;
+.box-input{
+    padding: 0.25rem 1rem;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid var(--gray);
+    background-color: var(--silver);
 }
 
 .icons{
     display: flex;
-    align-self: center;
+    column-gap: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .icon{
-    height: 25px;
-    width: auto;
-    padding: 0rem 1rem;
+    position: relative;
 }
+
+.notif-badge{
+    position: absolute;
+    font-size: 0.6rem;
+    bottom: 0.9rem;
+    left: 0.9rem;
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 0.2rem 0.35rem;
+    color: var(--white);
+}
+
+
+
